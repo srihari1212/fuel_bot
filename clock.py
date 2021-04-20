@@ -14,7 +14,7 @@ from data import city_lst
 
 sched = BlockingScheduler()
 
-@sched.scheduled_job('interval', seconds = 10)
+@sched.scheduled_job('interval', hours = 10)
 def initiate():
     now = datetime.now()
     today = date.today()
